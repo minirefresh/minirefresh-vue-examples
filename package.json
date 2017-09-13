@@ -1,7 +1,7 @@
 {
-  "name": "vue-helloworld",
+  "name": "minirefresh-vue-examples",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "minirefresh在vue中的组件开发示例",
   "author": "Lichun Dai <a546684355@qq.com>",
   "private": true,
   "scripts": {
