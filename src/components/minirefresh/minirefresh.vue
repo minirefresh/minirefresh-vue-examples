@@ -7,8 +7,8 @@
 </template>
 
 <script>
-    import '../../../dist/debug/minirefresh.css'
-    import MiniRefreshTools from '../../../dist/debug/minirefresh.js'
+    import 'minirefresh/dist/debug/minirefresh.css'
+    import MiniRefreshTools from 'minirefresh'
     
     const COMPONENT_NAME = 'minirefrsh'
     
@@ -40,7 +40,7 @@
         methods: {
             initMiniRefresh() {
                 // 暂时处理深复制
-                this.miniRefresh = new MiniRefreshTools.MiniRefreshTools.theme.defaults(Object.assign(this.options, {
+                this.miniRefresh = new MiniRefreshTools.theme.defaults(Object.assign(this.options, {
                     down: Object.assign(this.options.down || {}, {
                         callback: () => {
                             this.$emit('pullingDown')
